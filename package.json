@@ -1,0 +1,85 @@
+{
+  "name": "react-quizz-spanish",
+  "version": "0.3.65",
+  "private": false,
+  "description": "Quizz en react, traducido al español, autor original: hugobarragon",
+  "main": "lib/App.js",
+  "types": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugobarragon/react-quizzes.git"
+  },
+  "keywords": [
+    "react-form-builder",
+    "react form builder",
+    "react-quizzes",
+    "antd form builder",
+    "surveyjs",
+    "form builder"
+  ],
+  "author": "Hugo Barragon (http://github.com/hugobarragon)",
+  "contributors": [
+    "Esteban Villada (wesvh)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugobarragon/react-quizzes/issues"
+  },
+  "homepage": "https://hugobarragon.github.io/react-quizzes/",
+  "dependencies": {
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/lodash.isequal": "^4.5.5",
+    "@types/node": "12.12.3",
+    "@types/uuid": "^3.4.9",
+    "antd": "^3.26.20",
+    "iso-639-1": "^2.1.9",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.isequal": "^4.5.0",
+    "react-dnd": "^11.1.3",
+    "react-dnd-html5-backend": "^11.1.3",
+    "react-quill": "^1.3.5",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.0",
+    "@types/jest": "^24.9.1",
+    "@types/react": "^16.14.8",
+    "@types/react-dom": "^16.9.13",
+    "copyfiles": "^2.4.1",
+    "gh-pages": "^3.2.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^3.4.4",
+    "serve": "^12.0.0",
+    "typescript": "^3.9.9"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "compile": "tsc -p ./tsconfig.compile.json",
+    "postcompile": "copyfiles  -u 1 src/**/*.css lib/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
