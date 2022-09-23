@@ -43,7 +43,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.0",
     "@types/jest": "^24.9.1",
-    "@types/react": "^16.14.8",
+    "@types/react": "^16.14.32",
     "@types/react-dom": "^16.9.13",
     "copyfiles": "^2.4.1",
     "gh-pages": "^3.2.1",
@@ -51,7 +51,7 @@
     "react-dom": "^16.14.0",
     "react-scripts": "^3.4.4",
     "serve": "^12.0.0",
-    "typescript": "^3.9.9"
+    "typescript": "^3.9.10"
   },
   "peerDependencies": {
     "react": ">=16.8",

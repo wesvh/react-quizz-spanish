@@ -50,7 +50,7 @@ export default ({ onAdd, languagesList, existingOptions }: any) => {
       const currentOptionValue = existingOptions[index]["value"];
       if (newOptionValue === currentOptionValue) {
         // error message for already existing value (values must be unique by question)
-        return message.error("Esta opción ya existe);
+        return message.error("Esta opción ya existe");
       }
     }
 
