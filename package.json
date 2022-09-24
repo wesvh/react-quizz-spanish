@@ -1,6 +1,6 @@
 {
   "name": "react-quizz-spanish",
-  "version": "0.3.75",
+  "version": "0.3.85",
   "private": false,
   "description": "Quizz en react, traducido al español, autor original: hugobarragon",
   "main": "lib/App.js",
