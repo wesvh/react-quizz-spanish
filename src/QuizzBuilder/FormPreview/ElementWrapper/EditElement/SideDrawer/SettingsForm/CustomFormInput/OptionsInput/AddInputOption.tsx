@@ -5,6 +5,7 @@ import Drawer from "antd/es/drawer";
 import Input from "antd/es/input/Input";
 import FormItem from "antd/es/form/FormItem";
 import message from "antd/es/message";
+import cloneDeep from "lodash.clonedeep";
 import TextWithInfo from "../../../../../../../../ReusableComponents/TextWithInfo";
 import ISO6391 from "iso-639-1";
 import TranslatedText from "../../../../../../../../translations/TranslatedText";
@@ -30,7 +31,7 @@ export default ({ onAdd, languagesList, existingOptions }: any) => {
     e: React.ChangeEvent<HTMLInputElement>,
     language?: string
   ) {
-    const tempNewOption = { ...newOption };
+    const tempNewOption = cloneDeep(newOption);
 
     if (language) {
       tempNewOption["text"][language] = e.target.value;
@@ -84,7 +85,7 @@ export default ({ onAdd, languagesList, existingOptions }: any) => {
                 <TextWithInfo title={language}>
                   {getNativeName(language)}
                 </TextWithInfo>
-                <Input onChange={e => onChangeInput(e, language)} />
+                <Input onChange={(e) => onChangeInput(e, language)} />
               </Fragment>
             );
           })}
