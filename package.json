@@ -1,6 +1,6 @@
 {
   "name": "react-quizz-spanish",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": false,
   "description": "Quizz en react, traducido al español, autor original: hugobarragon",
   "main": "lib/App.js",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.0",
     "@types/jest": "^24.9.1",
-    "@types/react": "^16.14.32",
+    "@types/react": "^16.14.8",
     "@types/react-dom": "^16.9.13",
     "copyfiles": "^2.4.1",
     "gh-pages": "^3.2.1",
@@ -51,15 +51,15 @@
     "react-dom": "^16.14.0",
     "react-scripts": "^3.4.4",
     "serve": "^12.0.0",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.9"
   },
   "peerDependencies": {
     "react": ">=16.8",
     "react-dom": ">=16.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "compile": "tsc -p ./tsconfig.compile.json",
     "postcompile": "copyfiles  -u 1 src/**/*.css lib/",
     "predeploy": "npm run build",
